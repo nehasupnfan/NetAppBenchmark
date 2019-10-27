@@ -54,7 +54,9 @@ python3 client.py -n <name-for-client> -c <chunk-size-with-unit> -r <run-time> -
 Example:
 python3 client.py -n Client1 -c 10MB -r 45 -u http://127.0.0.1:8989 -z 1MB -f netapp -m "This is a string" -p /mnt/netapp
 ```
-To start multiple clients, repeat the above step of running the client from different terminals
+To start multiple clients, repeat the above step of running the client from different terminals. 
+
+Please note that once the heartbeat status from client becomes "offline", the master will check if any other client is "alive". If not, then the master will shutdown after writing some report. So kindly start multiple clients quickly.
 
 
 ## Running the unit tests
