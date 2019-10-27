@@ -1,0 +1,5 @@
+wsgiref
+falcon
+pytest
+pytest-cov
+pyjwt
